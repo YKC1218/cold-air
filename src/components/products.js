@@ -7,8 +7,6 @@ import Products from './showproduct'
 import Pagination from './Pagination'
 
 function Product()  {
-    Axios.defaults.withCredentials = true
-    
     const [product, setProduct] = useState([]);
     const [currentPage, setCurrentPage]= useState(1);
     const [productPerPage] = useState(8);
